@@ -12,7 +12,7 @@ async function checkHash() {
         }
 
 
-    var userInput = document.getElementById("input").value.toLowerCase();
+    var userInput = document.getElementById("input").value.toLowerCase()+"ratzulpstuf";
 
     // Calculate SHA-256 hash
     const encoder = new TextEncoder();
@@ -23,7 +23,7 @@ async function checkHash() {
     
     console.log(hashedInput)
 
-    var constantHash = "14ca1779036c22e5a2c6a34068bfb9fbb8f69d52b09727a60447be39a77f7eee"; // Replace this with your constant SHA-256 hash value
+    var constantHash = "16615ad45f56f11b76f54e7022d7d263e6decd63eb933102b7023a6a5fc2fabb"; // Replace this with your constant SHA-256 hash value
 
     if (hashedInput === constantHash) {
         window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // Redirect to a specific website
